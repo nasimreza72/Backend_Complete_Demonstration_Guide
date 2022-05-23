@@ -1,0 +1,39 @@
+POST http://localhost:3333/api/v1/users/register
+Content-Type: application/json
+
+{
+    "email": "nasimreza2@yahoo.com",
+    "password": "1234567"
+}
+
+### User login
+POST http://localhost:3333/api/v1/users/login
+Content-Type: application/json
+
+{
+    "email": "nasimreza2@yahoo.com",
+    "password": "1234567"
+}
+
+### Get Messages all
+
+GET http://localhost:3333/api/v1/messages
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MjhiNTZmOTY4MTg4YTFmY2E3MzZhMzEiLCJpYXQiOjE2NTMzMDU2MTh9.Qec8pp7AnX6bTRWwdJ2dHtIlVub3XlqyyZ0x5inQl_c
+
+
+### Messages Delete with id
+
+DELETE  http://localhost:3333/api/v1/messages/628b762f20ed6cc4bc041cfc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MjhiNTZmOTY4MTg4YTFmY2E3MzZhMzEiLCJpYXQiOjE2NTMzMDU2MTh9.Qec8pp7AnX6bTRWwdJ2dHtIlVub3XlqyyZ0x5inQl_c
+
+### Message create
+
+POST http://localhost:3333/api/v1/messages
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MjhiNTZmOTY4MTg4YTFmY2E3MzZhMzEiLCJpYXQiOjE2NTMzMDU2MTh9.Qec8pp7AnX6bTRWwdJ2dHtIlVub3XlqyyZ0x5inQl_c
+
+{
+    "title": "Foo",
+    "content": "If a lion could speak, we could not understan it",
+    "author": "ertzuio"
+}
